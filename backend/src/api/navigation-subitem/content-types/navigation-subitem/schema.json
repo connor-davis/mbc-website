@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "navigation_subitems",
+  "info": {
+    "singularName": "navigation-subitem",
+    "pluralName": "navigation-subitems",
+    "displayName": "navigation-subitem",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Displayname": {
+      "type": "string"
+    },
+    "Link": {
+      "type": "string"
+    },
+    "navigation_item": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::navigation-item.navigation-item",
+      "inversedBy": "navigation_subitems"
+    }
+  }
+}
